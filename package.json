@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "Start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,9 @@
     "express": "^4.18.2",
     "firebase-admin": "^11.2.0",
     "node": "^19.0.0"
+  },
+  "engines":{
+    "node": "v16.17.0",
+    "npm": "8.15.0"
   }
 }
