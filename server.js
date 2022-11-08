@@ -23,6 +23,7 @@ app.listen(port,);
 
 let serviceAccount;
 if (process.env.GOOGLE_CREDENTIALS != null) {
+    console.log("Not null.")
     serviceAccount = JSON.parse()
 }
 else {
