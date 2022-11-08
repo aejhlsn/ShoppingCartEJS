@@ -23,7 +23,7 @@ app.listen(PORT,);
 let serviceAccount;
 if (process.env.GOOGLE_CREDENTIALS != null) {
     console.log("Not null.")
-    serviceAccount = JSON.parse()
+    serviceAccount = JSON.parse(process.env.GOOGLE_CREDENTIALS)
 }
 else {
     serviceAccount = require("./funko-pop-collectibles-firebase-adminsdk-5yj3y-1ce82ac086.json");
