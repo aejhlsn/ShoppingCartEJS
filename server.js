@@ -18,6 +18,8 @@ const { get } = require('http');
 //Setting the environment variable or port, or Port 3000
 const port = process.env.PORT || 3000
 
+app.listen(port, (n) => console.log(`Listening to ${port}`))
+
 let serviceAccount;
 if (process.env.GOOGLE_CREDENTIALS != null) {
     serviceAccount = JSON.parse()
@@ -352,5 +354,3 @@ app.get('/shopping-cart', async (req, res, next) => {
 
 //res.status(200).send(JSON.stringify(items))
 
-
-app.listen(port, (n) => console.log(`Listening to ${port}`))
