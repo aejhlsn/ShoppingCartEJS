@@ -1,0 +1,51 @@
+[debug] [2022-11-08T17:27:17.973Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T17:27:17.974Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-11-08T17:27:17.975Z] CLI Version:   11.16.0
+[debug] [2022-11-08T17:27:17.975Z] Platform:      win32
+[debug] [2022-11-08T17:27:17.975Z] Node Version:  v16.17.0
+[debug] [2022-11-08T17:27:17.984Z] Time:          Wed Nov 09 2022 01:27:17 GMT+0800 (Philippine Standard Time)
+[debug] [2022-11-08T17:27:17.984Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T17:27:18.083Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T17:27:18.083Z] > authorizing via signed-in user (aejhlinaza@gmail.com)
+[debug] [2022-11-08T17:27:20.036Z] java version "19.0.1" 2022-10-18
+
+[debug] [2022-11-08T17:27:20.036Z] Java(TM) SE Runtime Environment (build 19.0.1+10-21)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.1+10-21, mixed mode, sharing)
+
+[debug] [2022-11-08T17:27:20.068Z] Parsed Java major version: 19
+[info] i  emulators: Starting emulators: functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore"}}
+[debug] [2022-11-08T17:27:20.082Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-08T17:27:20.082Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-08T17:27:20.082Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-08T17:27:20.082Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-11-08T17:27:20.089Z] [hub] writing locator at C:\Users\Alver\AppData\Local\Temp\hub-funko-pop-collectibles.json
+[debug] [2022-11-08T17:27:20.102Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-08T17:27:20.102Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-08T17:27:20.102Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, hosting, pubsub, storage\u001b[22m"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2022-11-08T17:27:20.375Z] Error: Cannot find module 'C:\Users\Alver\Documents\Personal\University\Elective 3 - Fullstack Development\PAA 6\functions\package.json'
+Require stack:
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:956:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:804:27)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at FunctionsEmulator.getNodeBinary (C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:622:21)
+    at FunctionsEmulator.start (C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:187:39)
+    at Function.start (C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\registry.js:18:24)
+    at startEmulator (C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:252:44)
+    at Object.startAll (C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:349:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\Alver\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:32:43
+[error] 
+[error] Error: An unexpected error has occurred.
