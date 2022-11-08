@@ -63,7 +63,7 @@ build/Release
 .env
 
 /node_modules
-/funko-pop-collectibles-firebase-adminsdk-5yj3y-1ce82ac086.json
+funko-pop-collectibles-firebase-adminsdk-5yj3y-1ce82ac086.json
 
 /cozastore-master
 /functions
