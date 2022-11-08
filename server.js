@@ -20,7 +20,7 @@ const port = process.env.PORT || 3000
 
 let serviceAccount;
 if (process.env.GOOGLE_CREDENTIALS != null) {
-    serviceAccount = JSON.parse(process.env.GOOGLE_CREDENTIALS)
+    serviceAccount = JSON.parse()
 }
 else {
     serviceAccount = require("./funko-pop-collectibles-firebase-adminsdk-5yj3y-1ce82ac086.json");
@@ -353,6 +353,4 @@ app.get('/shopping-cart', async (req, res, next) => {
 //res.status(200).send(JSON.stringify(items))
 
 
-app.listen(port, () => console.log(`Listening to ${port}`))
-
-module.exports = router;
+app.listen(port, (n) => console.log(`Listening to ${port}`))
