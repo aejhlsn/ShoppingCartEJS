@@ -15,7 +15,6 @@ app.use(bodyParser.urlencoded({extended : true}));
 const admin = require('firebase-admin');
 const { get } = require('http');
 
-console.log(GOOGLE_CREDENTIALS)
 //Setting the environment variable or port, or Port 3000
 const PORT = process.env.PORT || 3000;
 
