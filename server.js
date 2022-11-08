@@ -28,7 +28,7 @@ initCronJob();
 //Setting the environment variable or port, or Port 3000
 const port = process.env.PORT || 3000;
 
-app.listen(port, (n) => console.log(`Listening to ${port}`))
+app.listen(port,);
 
 let serviceAccount;
 if (process.env.GOOGLE_CREDENTIALS != null) {
