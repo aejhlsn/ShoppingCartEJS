@@ -1,3 +1,10 @@
+import express from "express";
+import configViewEngine from "./config/viewEngine";
+import initWebRoutes from "./routes/web";
+import bodyParser from "body-parser";
+import initCronJob from "./config/cronJob";
+
+
 const { async } = require('@firebase/util');
 const { render } = require('ejs');
 const { defaultMaxListeners } = require('events');
@@ -15,8 +22,11 @@ app.use(bodyParser.urlencoded({extended : true}));
 const admin = require('firebase-admin');
 const { get } = require('http');
 
+configViewEngine(app);
+initWebRoutes(app);
+initCronJob();
 //Setting the environment variable or port, or Port 3000
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
 app.listen(port, (n) => console.log(`Listening to ${port}`))
 
