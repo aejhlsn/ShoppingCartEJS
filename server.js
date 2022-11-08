@@ -35,25 +35,6 @@ const cc = db.collection('items');
 const use = db.collection('users');
 
 
-app.get('/', async (req, res) => {
-    const items = await cc.get();
-    console.log(items.docs.length);
-
-    //FOR SHOPPING CART
-    const userID = '939ZEcMO7hFy9ULNvfex'
-    const user_ref = use.doc(userID);
-    const doc = await user_ref.get();
-    const shopcart = user_ref.collection('cart');
-    const doc_child = await shopcart.get();
-    
-    let data = {
-        url: req.url,
-        itemData: items.docs,
-        shopData: doc_child.docs,
-    }
-    res.render('index', data);
-    console.log(JSON.stringify(data))
-});
 
 app.get('/index', async (req, res) => {
     const items = await cc.get();
